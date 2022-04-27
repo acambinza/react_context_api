@@ -1,12 +1,13 @@
-import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
 
 import Home from './pages/Home';
+import {AppProvider} from './contexts/cart/CartContext'
 
 function App() {
   return (
-    <Home />
+    <AppProvider>
+       <Home />
+    </AppProvider>
   )
 }
 
